@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-heading: var(--font-serif);
+
+  --color-forest: var(--forest);
+  --color-forest-dark: var(--forest-dark);
+  --color-forest-light: var(--forest-light);
+  --color-sage: var(--sage);
+  --color-sage-light: var(--sage-light);
+  --color-sage-dark: var(--sage-dark);
+  --color-ivory: var(--ivory);
+  --color-sand: var(--sand);
+  --color-sand-light: var(--sand-light);
+  --color-gold: var(--gold);
+  --color-charcoal: var(--charcoal);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  /* Rich Sacred Forest - vibrant, deep, grounded botanical tones */
+  --forest: #143324;
+  --forest-dark: #0A1C14;
+  --forest-light: #204C37;
+
+  /* Calming Eucalyptus & Moss Sage - organic, rich contrast */
+  --sage: #557560;
+  --sage-light: #7E9D8A;
+  --sage-dark: #2A4433;
+
+  /* Clean Warm Linen & Organic Alabaster - luminous, fresh, tranquil (NO dingy yellow!) */
+  --ivory: #FAF8F5;
+  --sand: #E5DDCF;
+  --sand-light: #F4EFE6;
+  --gold: #C69246;
+  --charcoal: #18201A;
+
+  --background: #FAF8F5;
+  --foreground: #18201A;
+  --card: #FFFFFF;
+  --card-foreground: #18201A;
+  --popover: #FFFFFF;
+  --popover-foreground: #18201A;
+  --primary: #143324;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EBE4D6;
+  --secondary-foreground: #143324;
+  --muted: #F2ECE0;
+  --muted-foreground: #4B574E;
+  --accent: #557560;
+  --accent-foreground: #FFFFFF;
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+  --border: #DFD6C5;
+  --input: #DFD6C5;
+  --ring: #143324;
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8BFAD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #879581;
+}
